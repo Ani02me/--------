@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Event Handling</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="customForm">
+        <label for="group">Топ таңдау:</label>
+        <select id="group">
+            <option value="">Таңдаңыз</option>
+            <option value="24/2">24/2</option>
+            <option value="24/4">24/4</option>
+        </select>
+        <br><br>
+
+        <label for="comment">Пікір жазыңыз:</label>
+        <textarea id="comment" rows="4" cols="50"></textarea>
+        <p id="commentMessage" class="error"></p>
+        <br>
+
+        <label for="rating">Бағалау:</label>
+        <input type="range" id="rating" min="1" max="10" value="5">
+        <span id="ratingValue">5</span>
+        <br><br>
+
+        <button type="submit">Жіберу</button>
+        <p id="formMessage"></p>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
